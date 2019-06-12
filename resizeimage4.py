@@ -11,10 +11,11 @@ def resizeimgvalue(fxv,fyv):
         
     cv2.imshow('Resized Image',resizeimg)
     
-    print('Resized Dimensions : ',resizeimg.shape)
+    return('Resized Dimensions : ',resizeimg.shape)
 
 def main():
-    resizeimgvalue(float(width), float(height))
+    resizedimageresult=resizeimgvalue(float(width), float(height))
+    print(resizedimageresult)
 
 main()
 
